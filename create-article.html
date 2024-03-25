@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Добавление рецепта
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Добавить сообщение</h1>
+        <form method="post">
+            <input type="text" name="title" id="title" class="form-control"
+                   placeholder="Введите свое имя или никнейм"><br>
+            <textarea name="intro" id="intro" class="form-control" placeholder="Введите сообщение"></textarea><br>
+            <textarea name="text" id="text" class="form-control" placeholder="Какие-то вопросы?"></textarea><br>
+            <input type="submit" class="btn btn-success" value="Добавить"><br>
+        </form>
+    </div>
+{% endblock %}
